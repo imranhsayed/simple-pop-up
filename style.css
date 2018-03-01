@@ -1,0 +1,39 @@
+/* Container element */
+.element {
+	position: relative;
+	padding: 10px;
+	margin: 100px;
+	user-select: none;
+	border: 1px solid coral;
+	display: inline-block;
+}
+
+/* Pop Up Element */
+.pop-up-text {
+	position: absolute;
+	visibility: hidden;
+	display: block;
+	width: 58px;
+	bottom: 50px;
+	left: 0;
+	padding: 5px;
+	font-size: 12px;
+	border: 2px solid #555;
+	background: #555;
+	color: #fff;
+}
+
+/* Pop up Arrow */
+.pop-up-text::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 43%;
+	border: 5px solid;
+	border-color: #555 transparent transparent transparent;;
+}
+
+/* Visibility Class */
+.show {
+	visibility: visible;
+}
